@@ -8,6 +8,6 @@ while (a>=sum)
 {
  sum = p+v;
  p = v;
- v = sum; 
- Console.Write($"{sum}, ");  
+ v = sum;  
+ Console.Write($"{sum}, ");
 }
