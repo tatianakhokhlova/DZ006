@@ -1,13 +1,15 @@
 ﻿// Показать числа Фибоначчи
-Console.WriteLine("До какого числа считать фибоначчи? ");
-int a = int.Parse(Console.ReadLine() ?? "0");
-int p = 1;
-int v = 1;
-int sum = 0;
-while (a>=sum)
+
+int Fibonacci(int n)
 {
- sum = p+v;
- p = v;
- v = sum;  
- Console.Write($"{sum}, ");
+    if (n == 1 || n == 2)
+        return 1;
+    else
+        return Fibonacci(n - 1) + Fibonacci(n - 2);
+
+}
+
+for (int i = 1; i <= 20; i++)
+{
+    Console.WriteLine(Fibonacci(i));
 }
